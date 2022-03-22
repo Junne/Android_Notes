@@ -91,6 +91,7 @@
 * [Retrofit2详解与使用](https://blog.csdn.net/m0_37796683/article/details/90702095) 
 * [优雅的封装网络请求,协程+Retrofit](https://juejin.cn/post/6959115482511343647) 
 * [ReJava+Retrofit完成网络请求](https://segmentfault.com/a/1190000018253015) 
+* [Kotlin+Retrofit+RxKotlin+MVP](https://juejin.cn/post/6844903542151446542) 
 
 
 

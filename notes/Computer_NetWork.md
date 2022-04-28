@@ -21,9 +21,9 @@
 
   * ISO(估计标准化组织)制定的OSI(Open System Interconnect)模型，将网络分为七层。
 
-    ![OSI七层模型的TCP/IP四层模型](/Users/mac/Documents/Study/MyGitHub/Android_Notes/notes/Images/OSI-TCP-IP.png)
+    ![OSI七层模型](https://github.com/Junne/Android_Notes/blob/master/notes/Images/OSI-TCP-IP.png) 
 
-    ![7LayerProtocol](/Users/mac/Documents/Study/MyGitHub/Android_Notes/notes/Images/7LayerProtocol.png) 
+    ![7LayerProtocol](https://github.com/Junne/Android_Notes/blob/master/notes/Images/7LayerProtocol.png) 
 
     
 
@@ -40,11 +40,11 @@
 
   * 三次握手
 
-    ![TCP三次握手](/Users/mac/Documents/Study/MyGitHub/Android_Notes/notes/Images/TCP三次握手.webp)
+    ![TCP三次握手](https://github.com/Junne/Android_Notes/blob/master/notes/Images/TCP三次握手.webp)
 
   * 四次挥手
 
-    ![TCP四次挥手](/Users/mac/Documents/Study/MyGitHub/Android_Notes/notes/Images/TCP四次挥手.webp)
+    ![TCP四次挥手](https://github.com/Junne/Android_Notes/blob/master/notes/Images/TCP四次挥手.webp) 
 
   
 
@@ -72,6 +72,8 @@
 * CDN(Content Delivery Network)
 
 * HTTP协议
+
+  * [网络基础知识之HTTP协议](https://zhuanlan.zhihu.com/p/24913080) 
 
 * HTTPS协议
 

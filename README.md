@@ -4,33 +4,28 @@
 
 #### 计算机网络:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [计算机网络基础](https://github.com/Junne/Android_Notes/blob/master/notes/Computer_NetWork.md)
+* [Android Network](https://github.com/Junne/Android_Notes/blob/master/notes/Android_NetWork.md) 
 
 ---
 
-#### 数据结构:
+#### 数据结构与算法:
 
 
 
+-----
+
+#### 加密算法:
+
+* [Android中的加密算法](https://github.com/Junne/Android_Notes/blob/master/notes/Android_Encrypt.md) 
 
 
 
+-----
 
 #### Android四大组件:
+
+* [Android四大组件](https://github.com/Junne/Android_Notes/blob/master/notes/Android_Four_Major_Components.md) 
 
 
 
@@ -54,8 +49,6 @@
 
 ---
 
-
-
 #### Java:
 
 
@@ -67,10 +60,6 @@
 
 
 ---
-
-
-
-
 
 #### 第三方框架:
 

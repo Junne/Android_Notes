@@ -75,7 +75,27 @@
 
   * [网络基础知识之HTTP协议](https://zhuanlan.zhihu.com/p/24913080) 
 
+  * [一个完整的HTTP请求过程](https://zhuanlan.zhihu.com/p/37436528)   [HTTP完成请求过程](https://www.cnblogs.com/guobm/p/9739704.html) 
+
+  * 协议内容
+
+  * HTTP请求过程图解
+
+    ![HTTP请求过程](/Users/mac/Documents/Study/MyGitHub/Android_Notes/notes/Images/HTTP请求过程.png) 
+
 * HTTPS协议
+
+  * [HTTP和HTTPS协议，看一篇就够了](https://blog.csdn.net/xiaoming100001/article/details/81109617) 
+
+  * [HTTPS详解](https://segmentfault.com/a/1190000021494676) 
+
+  * [SSL/TLS工作原理和详细握手过程](https://segmentfault.com/a/1190000021559557?_ea=29659396) 
+
+  * HTTPS加密解密验证及 数据传输过程:
+
+    ![HTTPS加密解密验证及 数据传输过程](/Users/mac/Documents/Study/MyGitHub/Android_Notes/notes/Images/HTTPS加密解密验证及 数据传输过程.webp) 
+
+    
 
 * ARP协议
 

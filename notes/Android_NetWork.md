@@ -1,5 +1,24 @@
 ### Android NetWork
 
+----
+
+
+
+
+
+##### 参考:
+
+* [Android网络请求详解](https://codeteenager.github.io/android/android21.html#http请求和响应) 
+* [Retrofit基本使用和源码解析](https://github.com/yangchong211/YCBlogs/blob/master/android/网络相关/02.Retrofit基本使用和源码解析.md) 
+* [Android注解快速入门和实用解析](https://www.jianshu.com/p/9ca78aa4ab4d) 
+* [利用注解改进代码检查](https://developer.android.com/studio/write/annotations?hl=zh-cn0) 
+
+
+
+
+
+
+
 
 
 ##### [Retrofit](https://square.github.io/retrofit/) 的使用:
@@ -9,7 +28,7 @@
 * 高德地图的天气服务: 1.[高德天气查询](https://lbs.amap.com/api/webservice/guide/api/weatherinfo/) 2.[城市编码查询](https://lbs.amap.com/api/webservice/download) 
 
   ```
-  https://restapi.amap.com/v3/weather/weatherInfo?key=4017b7f4d06c1c631d5baad7172d8468&extensions=all&city=410300
+  https://restapi.amap.com/v3/weather/weatherInfo?key=***&extensions=all&city=410300
   ```
 
 * [Android项目java与kotlin混编](https://blog.csdn.net/Cyanogen_dom/article/details/107876869) 
@@ -58,7 +77,7 @@
                 .build()
     				// AmapWeatherBead为解析的Java Bean
             val request = retrofit.create(AmapWeatherService::class.java)
-            request.getAmapWeather("4017b7f4d06c1c631d5baad7172d8468", "410300","all").
+            request.getAmapWeather("*****", "410300","all").
                 enqueue(object :Callback<AmapWeatherBean> {
                     override fun onFailure(call: Call<AmapWeatherBean>, t: Throwable) {
     
@@ -76,7 +95,34 @@
                 })
     ```
 
-    
+* Retrofit+RxJava使用:
+
+  ```kotlin
+      private fun requestWeatherData() {
+          val parm = HashMap<String, String>()
+          parm.put("key", BaseURL.AMAPWeatherKey)
+          parm.put("city", "410300")
+          parm.put("extensions", "all")
+          BuildApi.buildApiServices()!!.getAmapWeatherData(parm)
+                  .subscribeOn(Schedulers.newThread())
+                  .observeOn(AndroidSchedulers.mainThread())
+                  .subscribeBy ( onNext = {
+  
+                      Log.d("ApiServices() = ", it.toString())
+                      weatherData = it
+                      updateUI(weatherData)
+  
+                  }, onComplete = {
+                                  
+                  }, onError = {
+  
+                  })
+      }
+  ```
+
+  
+
+  
 
 ##### 创建Java对象
 

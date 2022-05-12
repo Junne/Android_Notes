@@ -10,6 +10,7 @@ Android 使用的文件系统类似于其他平台上基于磁盘的文件系统
 - **共享存储**：存储您的应用打算与其他应用共享的文件，包括媒体、文档和其他文件。
 - **偏好设置**：以键值对形式存储私有原始数据。
 - **数据库**：使用 Room 持久性库将结构化数据存储在专用数据库中。
+- **网络存储**：采用接口存储更新相关数据。
 
 
 
@@ -63,5 +64,9 @@ Room 持久性库在 SQLite 上提供了一个抽象层，以便在充分利用 
 * [使用Room将数据保存在本地数据库](https://developer.android.google.cn/training/data-storage/room?hl=zh-cn#kts) 
 
 * [A gardening app illustrating Android development best practices with Android Jetpack.](https://github.com/android/sunflower)
+
+* [将Room的使用方式塞到脑子里记下来](https://juejin.cn/post/6992875656707211271) 
+
+* [Kotlin中的单例](https://juejin.cn/post/6844903590545326088) 
 
   

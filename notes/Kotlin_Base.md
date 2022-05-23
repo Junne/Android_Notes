@@ -72,9 +72,56 @@ fun describe(obj: Any): String =
       .forEach { println(it) }
 ```
 
+**类**
 
+```kotlin
+class Person{ /**....**/ }
+```
 
+**抽象类**
 
+* 类以及其中的某些或全部成员可以声明为 `abstract`。 抽象成员在本类中可以不用实现。 并不需要用 `open` 标注抽象类或者函数。
+
+**接口**
+
+```kotlin
+interface MyInterface {
+    fun bar()
+    fun foo() {
+      // 可选的方法体
+    }
+}
+
+// 实现接口
+class Child : MyInterface {
+    override fun bar() {
+        // 方法体
+    }
+}
+
+interface MyInterface {
+    val prop: Int // 抽象的
+
+    val propertyWithImplementation: String
+        get() = "foo"
+
+    fun foo() {
+        print(prop)
+    }
+}
+
+class Child : MyInterface {
+    override val prop: Int = 29
+}
+```
+
+**可见性修饰符**
+
+* 在 Kotlin 中有这四个可见性修饰符：`private`、 `protected`、 `internal` 和 `public`。 默认可见性是 `public`。
+* 如果你不使用任何可见性修饰符，默认为 `public`，这意味着你的声明将随处可见。
+* 如果你声明为 `private`，它只会在声明它的文件内可见。
+* 如果你声明为 `internal`，它会在相同[模块](https://book.kotlincn.net/text/visibility-modifiers.html#模块)内随处可见。
+* `protected` 修饰符不适用于顶层声明。
 
 
 

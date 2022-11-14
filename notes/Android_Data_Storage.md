@@ -33,7 +33,20 @@ Android 使用的文件系统类似于其他平台上基于磁盘的文件系统
 
 ###### 从内部存储空间访问:
 
+* getFIlesDir()
+* getCacheDir()
+
 ###### 从外部存储空间访问: 
+
+* getExternalFilesDir()
+* getExternalCacheDir()
+
+
+
+##### 应用偏好设置-保存键值对数据
+
+* 如果您有想要保存的相对较小键值对集合，则应使用 `SharedPreferences` API。`SharedPreferences` 对象指向包含键值对的文件，并提供读写这些键值对的简单方法。每个 `SharedPreferences` 文件均由框架进行管理，可以是私有文件，也可以是共享文件。
+* 存储位置: data->data->包名->shared_prefs里面有你存的xml的键值对
 
 
 
@@ -68,5 +81,7 @@ Room 持久性库在 SQLite 上提供了一个抽象层，以便在充分利用 
 * [将Room的使用方式塞到脑子里记下来](https://juejin.cn/post/6992875656707211271) 
 
 * [Kotlin中的单例](https://juejin.cn/post/6844903590545326088) 
+
+* [Android数据存储(一)文件存储](https://juejin.cn/post/7054449817744834574) 
 
   
